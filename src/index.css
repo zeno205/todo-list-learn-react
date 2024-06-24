@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.strike-through-item::before { 
+    content: '';
+    position: absolute; 
+    top: 50%;
+    left: 0; /* Adjust based on your icon/padding */
+    right: 0; 
+    height: 0.5px; 
+    width: 100%;
+    background-color: rgb(120, 120, 120); 
+    transform: translateY(-50%);
+    z-index: 1; /* Ensure it's above the text */
+}
+
+.strike-through-item{
+    opacity: 50%;
+}
