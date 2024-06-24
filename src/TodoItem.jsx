@@ -1,3 +1,4 @@
+import bin from "./bin.svg"
 function TodoItem({id, title, date, completed, toggleTodo, deleteTodo}) {
     return (
         <li className="flex items-center w-full">
@@ -17,7 +18,7 @@ function TodoItem({id, title, date, completed, toggleTodo, deleteTodo}) {
             <button
                 onClick={() => deleteTodo(id)}
                 className="ml-4">
-                <img src="src/bin.svg" width="25px" height="25px" />
+                <img src={bin} width="25px" height="25px" />
             </button>
         </li>
     )
